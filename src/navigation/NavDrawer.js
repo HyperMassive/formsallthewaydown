@@ -14,7 +14,10 @@ const styles = theme => ({
 });
 
 const propTypes = {
-  classes: PropTypes.objectOf(PropTypes.string).isRequired,
+  classes: PropTypes.shape({
+    drawerPaper: PropTypes.string.isRequired,
+    toolbar: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 function NavDrawer(props) {

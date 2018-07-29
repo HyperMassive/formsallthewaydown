@@ -1,9 +1,14 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import MasterLayout from './components/navigation/MasterLayout';
+import MasterLayout from './navigation/MasterLayout';
 
 function App() {
-  return <MasterLayout />;
+  return (
+    <BrowserRouter>
+      <MasterLayout />
+    </BrowserRouter>
+  );
 }
 
 export default App;

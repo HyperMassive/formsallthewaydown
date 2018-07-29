@@ -12,7 +12,9 @@ const styles = theme => ({
 });
 
 const propTypes = {
-  classes: PropTypes.objectOf(PropTypes.string).isRequired,
+  classes: PropTypes.shape({
+    appBar: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 function NavAppBar(props) {
